@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "ordibehesht";
+  src: url(./Ordibehesht/Ordibehesht.TTF);
+}
+body {
+  font-family: "ordibehesht";
+  background-color: rgb(53, 53, 54);
+  direction: rtl;
+  font-size: 25px;
+}
+.nav-item {
+  margin-left: 100px;
+}
+.nav-li {
+  margin-left: 30rem;
+}
+.MainPic {
+  position: absolute;
+  width: 38rem;
+  border-radius: 5px;
+  top: 18rem;
+  right: 25rem;
+}
+.btn {
+  position: absolute;
+  width: 10rem;
+  height: 4rem;
+  right: 44%;
+  top: 25%;
+  font-size: larger;
+}
+.SecPic {
+  position: absolute;
+  width: 32rem;
+  height: 25rem;
+  border-radius: 5px;
+  top: 5rem;
+  right: 60rem;
+}
+.Third-Pic {
+  position: absolute;
+  width: 30rem;
+  height: 20rem;
+  border-radius: 5px;
+  top: 8rem;
+  right: 2rem;
+}
+.drop-in {
+  animation: drop-in 1s ease 200ms backwards;
+}
+@keyframes drop-in {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+.sec-drop-in {
+  animation: drop-in 2s ease 200ms backwards;
+}
+@keyframes drop-in {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+
+#address {
+  position: absolute;
+  top: 105%;
+  width: 100% !important;
+  background-color: white;
+  border-radius: 100% 50% 86% 100% / 10% 50% 86% 100%;
+  height: 15rem;
+  width: fit-content;
+}
+
+.curved {
+  background: linear-gradient(
+    90deg,
+    rgba(242, 241, 255, 1) 0%,
+    rgba(246, 246, 188, 1) 13%,
+    rgba(248, 250, 135, 1) 44%,
+    rgba(242, 246, 64, 1) 76%,
+    rgba(232, 246, 0, 1) 100%
+  );
+  position: absolute;
+  top: 45rem;
+  position: relative;
+  height: 25vh;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+
+@media screen and (max-width: 768px) {
+
+     
+  .Third-Pic {
+    position: inherit;
+    width: 20rem;
+    height: 10rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+  }
+  .MainPic {
+    position: inherit;
+    width: 20rem;
+    height: 10rem;
+    right: 0;
+    margin-top: 2rem;
+    margin-right: 2rem;
+  }
+  .SecPic {
+    position: inherit;
+    width: 20rem;
+    height: 10rem;
+    right: 0;
+    margin-top: 2rem;
+    margin-right: 2rem;
+  }
+  .btn {
+     position: static;
+     width: 8rem;
+     height: 3rem;
+     font-size: smaller;
+     margin-top: 2rem;
+     margin-right: 30%;
+  }
+  .curved {
+    margin-top: -32rem;
+  }
+  .main{
+     position: inherit !important;
+     margin-top: 5rem;
+     margin-right: 2rem;
+     right: 10% !important;
+     width: 20rem !important;
+     
+  }
+}
